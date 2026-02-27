@@ -45,9 +45,10 @@ gan_model = define_gan(g_model, d_model, (400, 600, 3))
 history = g_model.fit(src_images, gt_images, batch_size=4, epochs=100)
 
 
-## 📜 Citation
+## 📚 References
 If you find this work or code useful for your research, please cite our paper:
 
+### 🎓 Primary Citation
 **BibTeX:**
 ```bibtex
 @article{atif2024lowlight,
