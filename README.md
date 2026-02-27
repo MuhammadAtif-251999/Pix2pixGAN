@@ -34,7 +34,10 @@ The following datasets were used for training and evaluating **Self-RefineGAN**:
 * Pillow
 * Matplotlib
 
-### 📚 Primary Citation
+## 📚 References
+If you find this work or code useful for your research, please cite our paper:
+
+### 🎓 Primary Citation
 @article{atif2024lowlight,
   title={Low Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN},
   author={Atif, Muhammad and Yan, Cang},
