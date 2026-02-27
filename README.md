@@ -44,7 +44,7 @@ gan_model = define_gan(g_model, d_model, (400, 600, 3))
 # Start training
 history = g_model.fit(src_images, gt_images, batch_size=4, epochs=100)
 
-📜 Citation
+### 📜 Citation
 If you find this work helpful, please cite our paper:
 
 @article{atif2024lowlight,
