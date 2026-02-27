@@ -37,14 +37,3 @@ The following datasets were used for training and evaluating **Self-RefineGAN**:
 ## Primary Citation
 Standard Format: M. Atif and C. Yan, "Low Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN," International Journal of Computer and Information Engineering, vol. 18, no. 11, pp. 645-653, 2024.
 
-@article{atif2024lowlight,
-title={Low Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN},
-author={Atif, Muhammad and Yan, Cang},
-journal={International Journal of Computer and Information Engineering},
-volume={18},
-number={11},
-pages={645--653},
-year={2024},
-publisher={World Academy of Science, Engineering and Technology}
-}
-
