@@ -18,8 +18,11 @@ The generator consists of three specialized autoencoders where the knowledge is 
     * **SSIM Loss:** Structural Similarity Index for perceptual quality preservation.
 * **Dilation and Concatenation:** Uses dilated convolutions to increase the receptive field without losing resolution.
 
-## 📊 Dataset: SICE (Multi-Exposure)
-The model is trained on the **SICE (Single Image Contrast Enhancement)** dataset.
+## 📊 Datasets
+The following datasets were used for training and evaluating **Self-RefineGAN**:
+
+* **[LOLv1 Dataset](https://huggingface.co/datasets/geekyrakshit/LoL-Dataset)**: 500 paired low-light/normal-light images.
+* **[SICE Dataset](https://drive.google.com/file/d/1HiLtYiyT9R7dR9DRTLRlUUrAicC4zzWN/view)**: Multi-exposure image sequences.
 * **Input:** Low-exposure images.
 * **Target:** High-quality ground truth labels.
 * **Preprocessing:** Images are resized to **600x400** and normalized to [0, 1].0
@@ -32,5 +35,14 @@ The model is trained on the **SICE (Single Image Contrast Enhancement)** dataset
 * Matplotlib
 
 ## 📚 Primary Citation
-Standard Format: M. Atif and C. Yan, "Low Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN," International Journal of Computer and Information Engineering, vol. 18, no. 11, pp. 645-653, 2024.
+@article{atif2024lowlight,
+  title={Low Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN},
+  author={Atif, Muhammad and Yan, Cang},
+  journal={International Journal of Computer and Information Engineering},
+  volume={18},
+  number={11},
+  pages={645--653},
+  year={2024},
+  publisher={World Academy of Science, Engineering and Technology}
+}
 
