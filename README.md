@@ -44,14 +44,19 @@ gan_model = define_gan(g_model, d_model, (400, 600, 3))
 # Start training
 history = g_model.fit(src_images, gt_images, batch_size=4, epochs=100)
 
-### 📜 Citation
-If you find this work helpful, please cite our paper:
 
+## 📜 Citation
+If you find this work or code useful for your research, please cite our paper:
+
+**BibTeX:**
+```bibtex
 @article{atif2024lowlight,
-  title={Low-Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN},
+  title={Low Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN},
   author={Atif, Muhammad and Yan, Cang},
-  journal={World Academy of Science, Engineering and Technology},
+  journal={International Journal of Computer and Information Engineering},
   volume={18},
   number={11},
-  year={2024}
+  pages={645--653},
+  year={2024},
+  publisher={World Academy of Science, Engineering and Technology}
 }
