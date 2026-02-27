@@ -22,42 +22,15 @@ The generator consists of three specialized autoencoders where the knowledge is 
 The model is trained on the **SICE (Single Image Contrast Enhancement)** dataset.
 * **Input:** Low-exposure images.
 * **Target:** High-quality ground truth labels.
-* **Preprocessing:** Images are resized to **600x400** and normalized to [0, 1].
+* **Preprocessing:** Images are resized to **600x400** and normalized to [0, 1].0
 
-## 🚀 Getting Started
-
-### 1. Requirements
+## 1. Requirements
 * TensorFlow 2.x
 * Keras
 * NumPy
 * Pillow
 * Matplotlib
 
-### 2. Training the Model
-The training script includes the custom `Adadelta` optimizer for the discriminator and `Adam` for the GAN model.
-```python
-# Initialize models
-g_model = define_generator((400, 600, 3))
-d_model = define_discriminator((400, 600, 3))
-gan_model = define_gan(g_model, d_model, (400, 600, 3))
+## 📚 Primary Citation
+Standard Format: M. Atif and C. Yan, "Low Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN," International Journal of Computer and Information Engineering, vol. 18, no. 11, pp. 645-653, 2024.
 
-# Start training
-history = g_model.fit(src_images, gt_images, batch_size=4, epochs=100)
-
-
-## 📚 References
-If you find this work or code useful for your research, please cite our paper:
-
-### 🎓 Primary Citation
-**BibTeX:**
-```bibtex
-@article{atif2024lowlight,
-  title={Low Light Image Enhancement with Multi-Stage Interconnected Autoencoders Integration in Pix-to-Pix GAN},
-  author={Atif, Muhammad and Yan, Cang},
-  journal={International Journal of Computer and Information Engineering},
-  volume={18},
-  number={11},
-  pages={645--653},
-  year={2024},
-  publisher={World Academy of Science, Engineering and Technology}
-}
